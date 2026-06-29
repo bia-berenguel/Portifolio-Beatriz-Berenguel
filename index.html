@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags essenciais para responsividade e SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal - Currículo Online">
+    <title>Meu Portfólio | Currículo Online</title>
+
+    <!-- Ícone exibido na aba do navegador (favicon) -->
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Folha de estilos externa (CSS3 puro, sem frameworks) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ============================================
+         CABEÇALHO: Menu de navegação fixo no topo
+         Links utilizam âncoras (#) para navegação
+         entre seções sem recarregar a página
+         ============================================ -->
+    <header class="header" id="topo">
+        <nav class="nav container">
+            <!-- Botão hambúrguer: visível apenas em telas pequenas (mobile) -->
+            <button class="nav__toggle" id="menu-toggle" aria-label="Abrir menu de navegação">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+
+            <!-- Logo / Nome do portfólio -->
+            <a href="#topo" class="nav__logo">Meu Portfólio</a>
+
+            <!-- Lista de links do menu principal -->
+            <ul class="nav__list" id="nav-list">
+                <li><a href="#sobre" class="nav__link">Sobre mim</a></li>
+                <li><a href="#formacao" class="nav__link">Formação</a></li>
+                <li><a href="#portfolio" class="nav__link">Portfólio</a></li>
+                <li><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+
+            <!-- Botão para alternar entre tema claro e escuro -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema claro/escuro">
+                <!-- Ícone lua: visível no tema claro -->
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                </svg>
+                <!-- Ícone sol: visível no tema escuro -->
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="5"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ============================================
+             SEÇÃO 1: SOBRE MIM
+             Apresentação pessoal, hobbies e interesses
+             ============================================ -->
+        <section class="section section--hero" id="sobre">
+            <div class="container">
+                <div class="hero">
+                    <!-- Foto de perfil -->
+                    <div class="hero__photo">
+                        <img
+                            src="img/perfil.png"
+                            alt="Foto de perfil de Beatriz Berenguel"
+                            class="hero__avatar"
+                        >
+                    </div>
+
+                    <div class="hero__content">
+                        <h1 class="hero__title">Olá, eu sou <span class="highlight">Beatriz Berenguel</span></h1>
+                        <p class="hero__subtitle">Estudante de Análise e Desenvolvimento de Sistemas</p>
+
+                        <p class="hero__text">
+                            Sou apaixonado por tecnologia e programação. Busco constantemente
+                            aprender novas habilidades e aplicar meus conhecimentos em projetos
+                            práticos. Acredito que a tecnologia pode transformar vidas e estou
+                            motivado a contribuir com soluções inovadoras.
+                        </p>
+
+                        <!-- Hobbies e interesses pessoais -->
+                        <div class="hobbies">
+                            <h2 class="hobbies__title">Hobbies &amp; Interesses</h2>
+                            <ul class="hobbies__list">
+                                <li class="hobbies__item">💻 Programação e desenvolvimento web</li>
+                                <li class="hobbies__item">📚 Leitura de livros</li>
+                                <li class="hobbies__item">🎮 Jogos eletrônicos</li>
+                                <li class="hobbies__item">🏃 Praticar esportes ao ar livre</li>
+                                <li class="hobbies__item">🎵 Ouvir música</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SEÇÃO 2: FORMAÇÃO
+             Cursos, idiomas e formação educacional
+             ============================================ -->
+        <section class="section section--alt" id="formacao">
+            <div class="container">
+                <h2 class="section__title">Formação</h2>
+                <p class="section__subtitle">Minha trajetória acadêmica e profissional</p>
+
+                <div class="cards">
+
+                    <!-- Card: Formação educacional principal -->
+                    <article class="card">
+                        <div class="card__icon">🎓</div>
+                        <h3 class="card__title">Graduação</h3>
+                        <p class="card__period">2024 – Em andamento</p>
+                        <p class="card__text">
+                            <strong>Análise e Desenvolvimento de Sistemas</strong><br>
+                            UNINTER<br>
+                            Cursando o 2º semestre, desenvolvendo conhecimentos em programação, banco de dados, engenharia de software e desenvolvimento de aplicações.
+                        </p>
+                    </article>
+
+                    <!-- Card: Recode Pro - Formação Full Stack -->
+                    <article class="card">
+                        <div class="card__icon">💻</div>
+                        <h3 class="card__title">Cursos complementares</h3>
+                        <p class="card__period">mai/2023 – jan/2024</p>
+                        <p class="card__text">
+                            <strong>Curso Técnico Integrado – Formação Full Stack</strong><br>
+                            ONG Recode (540h)<br>
+                            Desenvolvimento web Full Stack com foco em HTML, CSS, JavaScript, MySQL, Java Spring, Thymeleaf e Bootstrap. Experiência com metodologias ágeis e modelagem de banco de dados.
+                        </p>
+        
+                    </article>
+
+                    <!-- Card: Idiomas -->
+                    <article class="card">
+                        <div class="card__icon">🌐</div>
+                        <h3 class="card__title">Idiomas</h3>
+                        <p class="card__period">Nível atual</p>
+                        <ul class="card__list">
+                            <li><strong>Português:</strong> Nativo</li>
+                            <li><strong>Inglês:</strong> Intermediário (leitura e escrita técnica)</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SEÇÃO 3: PORTFÓLIO
+             Links para projetos e trabalhos realizados
+             ============================================ -->
+        <section class="section" id="portfolio">
+            <div class="container">
+                <h2 class="section__title">Portfólio</h2>
+                <p class="section__subtitle">Alguns dos meus projetos e trabalhos</p>
+
+                <div class="projects">
+
+                    <!-- Projeto 1: Chatbot Django -->
+                    <article class="project">
+                        <div class="project__header">
+                            <span class="project__tag">Python / Django</span>
+                        </div>
+                        <h3 class="project__title">Chatbot</h3>
+                        <p class="project__desc">
+                            Projeto de chatbot desenvolvido em Python/Django inclui cadastro e login
+                            (usuário ou e-mail), recuperação de senha, edição de perfil com foto e
+                            área de chat acessível apenas para usuários autenticados.
+                        </p>
+                        <div class="project__links">
+                            <a href="https://github.com/bia-berenguel/Chatbot" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                                Ver no GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2: Business Direction MVC -->
+                    <article class="project">
+                        <div class="project__header">
+                            <span class="project__tag">Java / MVC</span>
+                        </div>
+                        <h3 class="project__title">Business Direction</h3>
+                        <p class="project__desc">
+                            Site de viagens desenvolvido com arquitetura MVC em Java, HTML, CSS
+                            e JavaScript, com cadastro de destinos, navegação entre páginas e
+                            operações CRUD para gerenciamento de dados.
+                        </p>
+                        <div class="project__links">
+                            <a href="https://github.com/bia-berenguel/businessdirection_MVC" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                                Ver no GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3: Calculadora Interativa -->
+                    <article class="project">
+                        <div class="project__header">
+                            <span class="project__tag">Java</span>
+                        </div>
+                        <h3 class="project__title">Calculadora Interativa</h3>
+                        <p class="project__desc">
+                            Cofre de moedas em Java com menu interativo no terminal. Permite
+                            adicionar, remover e listar moedas, além de converter Real, Dólar
+                            e Euro para BRL com validação de entrada.
+                        </p>
+                        <div class="project__links">
+                            <a href="https://github.com/bia-berenguel/Calculadora-Interativa" class="btn btn--outline" target="_blank" rel="noopener noreferrer">
+                                Ver no GitHub
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             SEÇÃO 4: CONTATO
+             Formulário com validação JavaScript
+             ============================================ -->
+        <section class="section section--alt" id="contato">
+            <div class="container">
+                <h2 class="section__title">Contato</h2>
+                <p class="section__subtitle">Entre em contato comigo pelo formulário abaixo</p>
+
+                <div class="contact-wrapper">
+                    <!-- Informações de contato -->
+                    <div class="contact-info">
+                        <h3 class="contact-info__title">Informações</h3>
+                        <ul class="contact-info__list">
+                            <li>📧 biastephanyreis@hotmail.com</li>
+                            <li>📍 Osasco, São Paulo – Brasil</li>
+                            <li>
+                                <a href="https://github.com/bia-berenguel" target="_blank" rel="noopener noreferrer">
+                                    🔗 github.com/bia-berenguel
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/beatriz-berenguel-reis-a92318254/" target="_blank" rel="noopener noreferrer">
+                                    🔗 linkedin.com/in/beatriz-berenguel-reis
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Formulário de contato com validação JS -->
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <!-- Campo: Nome -->
+                        <div class="form-group">
+                            <label for="nome" class="form-label">Nome *</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                class="form-input"
+                                placeholder="Seu nome completo"
+                                required
+                            >
+                            <span class="form-error" id="error-nome"></span>
+                        </div>
+
+                        <!-- Campo: E-mail -->
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                class="form-input"
+                                placeholder="seu@email.com"
+                                required
+                            >
+                            <span class="form-error" id="error-email"></span>
+                        </div>
+
+                        <!-- Campo: Mensagem -->
+                        <div class="form-group">
+                            <label for="mensagem" class="form-label">Mensagem *</label>
+                            <textarea
+                                id="mensagem"
+                                name="mensagem"
+                                class="form-input form-textarea"
+                                placeholder="Escreva sua mensagem aqui..."
+                                rows="5"
+                                required
+                            ></textarea>
+                            <span class="form-error" id="error-mensagem"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         RODAPÉ
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Beatriz Berenguel. Todos os direitos reservados.</p>
+            <p class="footer__note">Desenvolvido com HTML5, CSS3 e JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Modal de confirmação de envio (exibido após validação bem-sucedida) -->
+    <div class="modal" id="success-modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__content">
+            <div class="modal__icon">✅</div>
+            <h3 class="modal__title" id="modal-title">Mensagem enviada com sucesso!</h3>
+            <p class="modal__text">Obrigado pelo contato. Responderei em breve.</p>
+            <button class="btn btn--primary" id="modal-close">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Script JavaScript externo (sem frameworks) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
