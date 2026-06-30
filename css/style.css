@@ -3,16 +3,16 @@
    Permite alternância de tema via JavaScript
    ============================================= */
 :root {
-    --color-bg: #f8f9fc;
-    --color-bg-alt: #eef1f8;
+    --color-bg: #fdf8f6;
+    --color-bg-alt: #faf0ec;
     --color-surface: #ffffff;
     --color-text: #1a1d2e;
     --color-text-muted: #5a6178;
-    --color-primary: #4f6ef7;
-    --color-primary-dark: #3a56d4;
-    --color-accent: #7c3aed;
-    --color-border: #dde2ef;
-    --color-shadow: rgba(26, 29, 46, 0.08);
+    --color-primary: #e07a5f;
+    --color-primary-dark: #c45c42;
+    --color-accent: #f2a68c;
+    --color-border: #ecd9d2;
+    --color-shadow: rgba(74, 40, 30, 0.08);
     --color-error: #e53e3e;
     --header-height: 70px;
     --radius: 12px;
@@ -26,9 +26,9 @@ body.dark-theme {
     --color-surface: #1e2230;
     --color-text: #e8eaf0;
     --color-text-muted: #9499ad;
-    --color-primary: #6b8aff;
-    --color-primary-dark: #5575f0;
-    --color-accent: #a78bfa;
+    --color-primary: #f4a582;
+    --color-primary-dark: #e07a5f;
+    --color-accent: #f7b89a;
     --color-border: #2d3348;
     --color-shadow: rgba(0, 0, 0, 0.3);
 }
@@ -528,7 +528,7 @@ body.dark-theme .theme-toggle__icon--sun {
 .form-input:focus {
     outline: none;
     border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(79, 110, 247, 0.15);
+    box-shadow: 0 0 0 3px rgba(224, 122, 95, 0.2);
 }
 
 .form-input--error {
